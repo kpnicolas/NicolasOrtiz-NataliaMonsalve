@@ -1,0 +1,262 @@
+body {
+    background-color: lavenderblush;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+    font-size: 28;
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28;
+}
+
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28;
+}
+
+h4 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.m1 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    overflow: hidden;
+    background-color: salmon;
+}
+
+.enlace {
+    display: inline-block;
+    background-color: salmon;
+    color: aliceblue;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.enlace:hover {
+    background: rgb(204, 111, 111);
+}
+
+.enlace1 {
+    display: inline-block;
+    background-color: salmon;
+    color: aliceblue;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.enlace1:hover {
+    background: rgb(204, 111, 111);
+}
+
+footer {
+    background-color: darksalmon;
+    color: snow;
+}
+
+input {
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.rad {
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.coment {
+    width: 260px;
+    height: 90px;
+}
+
+.cuerpo {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.productos Img {
+    width: 200px;
+    height: 200px;
+}
+
+.p1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: salmon;
+    box-shadow: 0 1px 3px black;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+#chatv {
+    color: snow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tabl {
+    width: 96%;
+}
+
+.chatvet {
+    border-top-left-radius: 5px;
+    background-color: burlywood;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+.chatami {
+    border-top-right-radius: 5px;
+    background-color: lightcoral;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+.chat {
+    border-bottom-left-radius: 5px;
+    width: 80%;
+    background-color: lightcoral;
+    padding: 20px 780px 20px 15px;
+    margin: 0px;
+}
+
+.activo {
+    border-radius: 5px;
+    padding: 60px;
+    background-color: ghostwhite;
+    width: 20%;
+    color: rgb(25, 24, 29);
+}
+
+#inactivo {
+    color: lightslategrey;
+}
+
+#mensaje {
+    width: 70%;
+    background-color: none;
+    padding: 35px;
+    margin: none;
+}
+
+form {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 300px;
+}
+
+input,
+textarea {
+    border: 0;
+    outline: none;
+    width: 280px;
+}
+
+.field {
+    border: solid 1px #000000;
+    padding: 5px;
+}
+
+.btn {
+    border-radius: 15px;
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.btn-salmon {
+    color: white;
+    background-color: salmon;
+}
+
+.btn-salmon:hover {
+    background-color: darksalmon;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+select {
+    padding: 5px;
+}
+
+.contenedor {
+    width: 100%;
+    padding: 15px;
+}
+
+.sesion {
+    font-size: 18px;
+    width: 82%;
+    padding: 10px;
+    border: solid 1px #E0ECF8;
+}
+
+.i {
+    width: 120px;
+}
+
+.y {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+.imagen {
+    width: 15px;
+}
+
+.volver {
+    text-decoration: none;
+    color: #000000;
+}
+
+.tabla1 {
+    background-color: white;
+    border: 1px #000000;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+.tabla2 {
+    background-color: white;
+    border-collapse: collapse;
+    border: 5px #000000;
+}
+
+.titulo {
+    background-color: salmon;
+    border-bottom: solid 2px #000000;
+    color: white;
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}

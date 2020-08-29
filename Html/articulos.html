@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Articulos</title>
+    <link rel="icon" type="image/png" href="../Img/veterinario.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <style>
+        
+      </style>
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <button
+          onclick="show()"
+          type="button"
+          class="btn btn-primary float-left"
+          data-toggle="modal"
+          data-target="#exampleModalCentered"
+        >
+          Iniciar sesion
+        </button>
+      </nav>
+      <div class="d-none d-sm-none d-md-block">
+ 
+        <div style="max-width: 500px;">
+        <a href="articulos.html"><img class="mySlides" src="../Img/Fondo_Articulos_Mesa de trabajo 1.png"></a>
+        <a href="contactenos.html"><img class="mySlides" src="../Img/EncabezadoContac_Mesa de trabajo 1.png"></a>
+        <a href="catagolo.html"><img class="mySlides" src="../Img/catalogo.png"></a>
+        <a href="../index.html"><img class="mySlides" src="../Img/recepcion.jpg" height="400" width="300%"></a>
+        <a href="somos.html"><img class="mySlides" src="../Img/EncabezadoSomos_Mesa de trabajo 1.png"></a>
+        <a href="servicios.html"><img class="mySlides" src="../Img/EncabezadoServicios_Mesa de trabajo 1.png"></a>
+        </div>
+      </div>
+    </header>
+    <div
+      class="modal"
+      id="exampleModalCentered"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenteredLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenteredLabel">
+              Iniciar sesion
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">X</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="log">
+              <form id="form" class="form-signin">
+                <label class="m-3 h5 font-weight-normal">Usuario</label>
+                <input class="form-control" id="user" type="text" />
+                <label class="m-3 h5 font-weight-normal">Contraseña</label>
+                <input class="form-control" id="password" type="password" />
+                <input
+                  class="btn btn-lg btn-primary btn-block mt-3"
+                  type="submit"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary nav-justified">
+      <button
+        class="navbar-toggler navbar-toggler-right"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarTogglerDemo02"
+      >
+        <ul class="navbar-nav mt-2 mt-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="somos.html">Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="articulos.html"
+              >Articulos<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactenos.html">Contactenos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catagolo.html">Catalogo</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container mt-3">
+            <h2>Nuestra tienda</h2>
+            <p>
+              En SitWithMe ¡compartimos el amor por las mascotas! Somos una
+              tienda virtual colombiana que ofrece a los padres de perros y
+              gatos productos y servicios de calidad para que su mascota tenga
+              una excelente vida. Entre nuestro catálogo nuestros clientes
+              pueden comprar alimentos para perros y gatos marca Hill’s,
+              Equilibrio, Pro Plan, Monello, Nutra Nuggets, Taste of the Wild,
+              Max, Royal Canin, entre muchas más, accesorios como comederos,
+              juguetes, areneros, ropa, bozales, y más.<br /><br />
+              Somos la comunidad de mascotas más grande de Colombia y nuestro
+              diferencial de otras tiendas virtuales es que además de productos
+              para mascotas, ofrecemos servicios como vacunación,
+              esterilización, hotel canino, profilaxis, consulta veterinaria,
+              para brindar a los dueños de mascotas los mejores servicios para
+              el cuidado y salud de sus peludos.<br />
+              <br />
+              ¿Cómo comprar? Comprar es muy sencillo , debes registrarte en
+              nuestra página, agregar al carrito de compra el producto que
+              deseas, luego elegir el método de pago (puedes elegir entre
+              tarjeta de débito, crédito, consignación bancaria o pago vía
+              Efecty o Baloto) y ¡listo!, tu pedido será entregado entre 1 y 3
+              días si es en Bogotá o ciudades principales, o entre 3 y 7 días en
+              el resto del país.
+            </p>
+            
+        
+          
+            <h2>¡Algunos de nuestros productos!</h2>
+            <div class="card mr-1">
+              <ol class="rounded list-group list-group-flush">
+                  <li class="list-group-item"><b>Gatos</b>
+                      <ol>
+                          <li class="list-group-item">Areneros</li>
+                          <li class="list-group-item">Comederos</li>
+                          <li class="list-group-item">Cueva termica</li>
+                      </ol>
+                  </li>
+                  <li class="list-group-item"><b>Perros</b>
+                      <ol>
+                          <li class="list-group-item">Comedero</li>
+                          <li class="list-group-item">Cepillo limpiador de piojos</li>
+                          <li class="list-group-item">Maquina peluquera</li>
+                      </ol>
+                  </li>
+                  <li class="list-group-item"><b>Tortugas</b>
+                    <ol>
+                        <li class="list-group-item">Peceras</li>
+                        <li class="list-group-item">Calentador de agua</li>
+                        <li class="list-group-item">Lámpara</li>
+                    </ol>
+                </li>
+              </ol>
+          </div><br><br>
+          <div class="container mt-3">
+            <div class="row">
+              <div class="d-none d-md-block col-md-12 col-lg-12">
+            <center>
+          <table width="100%">
+            <tr>
+                <th colspan="2" class="table-primary">
+                    <center>Tipos de animales en los hogares</center>
+                </th>
+            </tr>
+          </tr>
+          <tr>
+            <td>Perros</td>
+            <td>72%</td>
+          </tr>
+
+          <tr>
+            <td>Gatos</td>
+            <td>20%</td>
+          </tr>
+
+          <tr>
+            <td>Hamsters</td>
+            <td rowspan="2">1.5%</td>
+          </tr>
+
+          <tr>
+            <td>Peces</td>
+          </tr>
+
+          <tr>
+            <td>Pajaros</td>
+            <td>5%</td>
+          </tr>
+        </table>
+      </center>
+      </div>
+    </div>
+    </div>
+    </div>
+    
+        <div class="container mt-5">
+        <div class="row">
+          <div class="d-none d-md-block col-md-12 col-lg-12">
+        <center>
+        <h2>Mira nuestros accesorios</h2>
+        
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/h9RIlUzjPNw"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      
+      </center>
+    </div>
+  </div>
+</div> <br><br>
+<div class="row">
+  
+  <div class="d-none d-md-block col-md-12 col-lg-12">
+<center>
+        <h2>
+          Aprende un poco sobre tus mascotas en estas paginas
+        </h2>
+        <table width="60%" border="0" class="bg-primary" >
+          <tr>
+            <td>
+              <a href="https://misanimales.com/cosas-debes-aprender-perro/">
+                <center>
+                  <img
+                    src="../Img/perros.png"
+                    alt="icono"
+                    width="50"
+                    height="50"
+                  />
+                </center>
+              </a>
+            </td>
+            <td>
+              <a
+                href="https://www.ocico.co/blog/2017/02/23/lecciones-que-podemos-aprender-de-los-gatos/"
+              >
+                <center>
+                  <img
+                    src="../Img/gatos.png"
+                    alt="icono"
+                    width="50"
+                    height="50"
+                  />
+                </center>
+              </a>
+            </td>
+            <td>
+              <a
+                href="https://www.bekiamascotas.com/articulos/hamster-todo-lo-que-tienes-que-saber/"
+              >
+                <center>
+                  <img
+                    src="../Img/hamster.png"
+                    alt="icono"
+                    width="50"
+                    height="50"
+                  />
+                </center>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </center>
+  </div>
+</div>
+
+
+    <footer class="blockquote-footer text-white bg-primary text-center mt-5">
+      © Nicolas Ortiz-Natalia Monsalve, 2020. Todos los derechos reservados
+    </footer>
+    <script src="../Js/carousel.js"></script>
+    <script src="../Js/sesion.js"></script>
+  </body>
+</html>

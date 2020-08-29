@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Contactenos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"
+        ></script>
+        
+        <link rel="icon" type="image/png" href="../Img/veterinario.png" />
+    
+    </head>
+        <header>
+            <style>
+              
+            </style>
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+              <button
+                onclick="show()"
+                type="button"
+                class="btn btn-primary float-left"
+                data-toggle="modal"
+                data-target="#exampleModalCentered"
+              >
+                Iniciar sesion
+              </button>
+            </nav>
+            <div class="d-none d-sm-none d-md-block">
+       
+              <div style="max-width: 500px;">
+              <a href="contactenos.html"><img class="mySlides" src="../Img/EncabezadoContac_Mesa de trabajo 1.png"></a>
+              <a href="catagolo.html"><img class="mySlides" src="../Img/catalogo.png"></a>
+              <a href="../index.html"><img class="mySlides" src="../Img/recepcion.jpg" height="400" width="300%"></a>
+              <a href="somos.html"><img class="mySlides" src="../Img/EncabezadoSomos_Mesa de trabajo 1.png"></a>
+              <a href="servicios.html"><img class="mySlides" src="../Img/EncabezadoServicios_Mesa de trabajo 1.png"></a>
+              <a href="articulos.html"><img class="mySlides" src="../Img/Fondo_Articulos_Mesa de trabajo 1.png"></a>
+              
+              </div>
+            </div>
+          </header>
+          <div
+          class="modal"
+          id="exampleModalCentered"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenteredLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenteredLabel">
+                  Iniciar sesion
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">X</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div id="log">
+                  <form id="form" class="form-signin">
+                    <label class="m-3 h5 font-weight-normal">Usuario</label>
+                    <input class="form-control" id="user" type="text" />
+                    <label class="m-3 h5 font-weight-normal">Contraseña</label>
+                    <input class="form-control" id="password" type="password" />
+                    <input
+                      class="btn btn-lg btn-primary btn-block mt-3"
+                      type="submit"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary nav-justified">
+            <button
+              class="navbar-toggler navbar-toggler-right"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarTogglerDemo02"
+            >
+              <ul class="navbar-nav mt-2 mt-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="somos.html">Somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="articulos.html"
+                    >Articulos</a
+                  >
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="contactenos.html">Contactenos<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="catagolo.html">Catalogo</a>
+                </li>
+              </ul>
+            </div>
+          </nav><br><br>
+          <center>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 bg-light jumbotron rounded">
+          <form id="formulario">
+            <div class="form-group">
+              <label for="Nombre">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+              <label for="Apellido">Apellido</label>
+              <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+            </div>
+            <div class="form-group">
+                <label for="Id">Identificación</label>
+                <input type="number" class="form-control" id="cedula" placeholder="Identificación">
+              </div>
+              <div class="form-group">
+                <label for="Dirección">Dirección</label>
+                <input type="text" class="form-control" id="dir" placeholder="Dirección">
+              </div>
+              <div class="form-group">
+                <label for="Cel">Celular</label>
+                <input type="number" class="form-control" id="tel" placeholder="Celular">
+              </div>
+              <div class="form-group">
+                <label for="Correo">Correo</label>
+                <input type="e-mail" class="form-control" id="correo" placeholder="alguien@micorreo.com">
+              </div>
+              <div class="form-group">
+                <label for="Blog">Blog personal</label>
+                <input type="link" class="form-control" id="blog" placeholder="Www.miblog.com">
+              </div>
+              <div class="form-group">
+                <label for="">Fecha de nacimiento</label>
+                <input class="float-leftt form-control mr-2" type="date" id="fechanac">
+                </div>
+              <div class="form-group">
+                <label for="">Genero</label>
+                <select class="form-control" id="genero">
+                  <option>Masculino</option>
+                  <option>Femenino</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="">Ocupación</label>
+                <select class="form-control" id="ocupacion">
+                  <option>Trabajo</option>
+                  <option>Estudio</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="">¿Tienes mascotas?</label>
+                <select class="form-control" id="pregunta1">
+                  <option>Sí</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <form>
+                <div class="form-group">
+                  <label for="formControlRange">¿Qué tanto te gusta esta pagina?</label>
+                  <input type="range" class="form-control-range" id="formControlRange">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Dejanos un mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+              </form>
+            <button type="submit" class="btn btn-primary" onclick="enviar()">Enviar</button>
+
+        <input type="button" value="Ocultar" class="btn btn-primary" onclick="ocultar()"><br><br>
+          </form>
+
+          <div id="mostrarOcultar">
+              <center>
+          <table id="myTable" id="mostrar"  class="bg-light"  width="100%" class="rounded">
+                <thead>
+
+                    <tr>
+                        <td colspan="3"><p id="suma" id="fname" class="text-dark"></p></td>
+                        <td><input type="button" class="btn btn-dark float-right" value="Borrar" onclick="delRow(this)"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><p id="suma" id="fname" class="text-dark"></p></td>
+
+                        <td><input type="button" class="btn btn-dark float-right" value="Borrar" onclick="delRow(this)"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><p id="suma" id="fname" class="text-dark" ></p></td>
+
+                        <td><input type="button" class="btn btn-dark float-right" value="Borrar" onclick="delRow(this)"></td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </center>
+        </div>
+    </center>
+
+    <footer class="blockquote-footer text-white bg-primary text-center mt-5">
+        © Nicolas Ortiz-Natalia Monsalve, 2020. Todos los derechos reservados
+      </footer>
+      <script src="../Js/carousel.js"></script>
+      <script src="../Js/sesion.js"></script>  
+    <script src="../js/contactenos.js"></script>
+</body>
+
+</html>

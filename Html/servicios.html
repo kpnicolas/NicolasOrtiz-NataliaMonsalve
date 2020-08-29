@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Servicios</title>
+    <link rel="icon" type="image/png" href="../Img/veterinario.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <button onclick="show()" type="button" class="btn btn-primary float-left" data-toggle="modal"
+                data-target="#exampleModalCentered">
+                Iniciar sesion
+            </button>
+        </nav>
+        <div class="d-none d-sm-none d-md-block">
+            <div class="d-none d-sm-none d-md-block">
+                <div style="max-width: 500px;">
+                
+                <a href="servicios.html"><img class="mySlides" src="../Img/EncabezadoServicios_Mesa de trabajo 1.png"></a>
+                <a href="articulos.html"><img class="mySlides" src="../Img/Fondo_Articulos_Mesa de trabajo 1.png"></a>
+                <a href="contactenos.html"><img class="mySlides" src="../Img/EncabezadoContac_Mesa de trabajo 1.png"></a>
+                <a href="catagolo.html"><img class="mySlides" src="../sImg/catalogo.png"></a>
+                <a href="../index.html"><img class="mySlides" src="../sImg/recepcion.jpg" height="400" width="300%"></a>
+                <a href="somos.html"><img class="mySlides" src="../Img/EncabezadoSomos_Mesa de trabajo 1.png"></a>
+                </div>
+              </div></div>
+    </header>
+
+    <div class="modal" id="exampleModalCentered" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenteredLabel">Iniciar sesion</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">X</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="log">
+                        <form id="form" class="form-signin">
+                            <label class="m-3 h5 font-weight-normal">Usuario</label>
+                            <input class="form-control" id="user" type="text">
+                            <label class="m-3 h5 font-weight-normal">Contraseña</label>
+                            <input class="form-control" id="password" type="password">
+                            <input class="btn btn-lg btn-primary btn-block mt-3" type="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary nav-justified">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mt-2 mt-md-0">
+                <li class="nav-item ">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="somos.html">Somos</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="servicios.html">Servicios<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="articulos.html">Articulos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactenos.html">Contactenos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catagolo.html">Catalogo</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <table>
+            <tr>
+                <td>
+                    <section>
+                        <h3>Nuestros servicios</h3>
+                        <p>
+                            Somos la comunidad de mascotas más grande de Colombia y nuestro diferencial de otras tiendas
+                            virtuales es que además de productos para mascotas, ofrecemos servicios como vacunación,
+                            esterilización, hotel canino, profilaxis, consulta veterinaria, para
+                            brindar a los dueños de mascotas los mejores servicios para el cuidado y salud de sus
+                            peludos.</p>
+                        <h3>¿Qué es un plan de salud?</h3>
+                        <p>Igual que para nosotros contratamos pólizas y servicios médicos, es importante que lo hagamos
+                            con nuestros animales. Un plan de salud para nuestra mascota es un paquete de servicios que
+                            contratamos con el objetivo de tener un control
+                            continuo sobre el estado de salud de nuestro animal.</p>
+                        <p>Los planes de salud están enfocados a todo tipo de razas y edades. Al tener un carácter
+                            preventivo y una asistencia continua, resultan más relevantes en cachorros y primeros meses
+                            de vida. En estas etapas primeras de vida del animal,
+                            es cuando más gastos se presentan, ente otras cosas por los protocolos de vacunación y
+                            desparasitación básicos, microchip…etc.
+                        </p>
+
+                        <div>
+                            <h3>¿Qué debes buscar en un plan de salud?</h3>
+                            <p>Existen algunos aspectos básicos que debemos tener en cuenta:</p>
+                            <ul>
+                                <li>
+                                    <p>Esencialmente, el plan de salud debe contemplar el esquema completo de vacunación
+                                        y revacunación. Las enfermedades que básicamente deben estar incluidas son:
+                                        moquillo, parvovirus, leptospirosis y adenovirus canino.</p>
+
+                                </li>
+                                <li>
+                                    <p>Aplicación de esquema de vacunación contra la rabia (sobre todo en aquellas
+                                        comunidades donde la vacunación de la rabia es obligatoria).</p>
+                                </li>
+
+                                <li>
+                                    <p>El plan debe considerar un numero de consultas anuales tanto de atención a
+                                        problemas puntuales, como de control y seguimiento.</p>
+                                </li>
+                                <li>
+                                    <p>La atención dental del animal es importante, sobre todo en cachorros. Las
+                                        revisiones y limpiezas dentales deben considerarse prioritarias en los planes de
+                                        salud.</p>
+                                </li>
+                                <li>
+                                    <p>Que contenga un plan de desparasitación interna (parásitos gastrointestinales,
+                                        cardiacos y pulmonares) y externa (pulgas, garrapatas, etc.)</p>
+                                </li>
+                                <li>
+                                    <p>En caso de no tenerlo, el chip de identificación del animal.servicios no
+                                        incluidos en el plan de salud (como alimentación, cirugías, pruebas externas o
+                                        limpiezas de boca, entre otros). Todo ello siempre buscando la
+                                        máxima calidad en los servicios, ya que repercutirá directamente en la salud de
+                                        tu mascota.</p>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </td>
+            </tr>
+        </table>
+
+
+        <center>
+            <div class="row">
+                <div class="d-none d-md-block col-md-12 col-lg-12">
+                    <h3>Nuestro personal está capacitado para el mejor cuidado para tu mascota</h3>
+                </div>
+                <div class="d-none d-md-block col-md-12 col-lg-6">
+                    <img src="../Img/doc1.jpg" width="450" height="350">
+                </div>
+                <div class="d-none d-md-block col-md-12 col-lg-6">
+                    <img src="../Img/doc.jpg" width="450" height="350">
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="d-none d-md-block col-md-6 col-lg-6">
+
+                    <table width="100%" border="0">
+                        <tr>
+                            <th colspan="2" class="table-primary">
+                                <center>Costos</center>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Limpiezas a tu mascota</p>
+                            </td>
+                            <td>
+                                <p>15.000$</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Limpieza dental</p>
+                            </td>
+                            <td>
+                                <p>12.000$</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Corte de pelo</p>
+                            </td>
+                            <td>
+                                <p>22.000$</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Vacunación</p>
+                            </td>
+                            <td>
+                                <p>25.000$</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp"
+                                placeholder="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Telefono</label>
+                            <input type="number" class="form-control" id="tel"
+                                placeholder="Telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Correo</label>
+                            <input type="email" class="form-control" id="correo"
+                                placeholder="Correo@correo.com">
+                            <small id="emailHelp" class="form-text text-muted">No usaremos su E-mail para cosas
+                                indebidas.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Servicio a consultar</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Baño</option>
+                                <option>Alimentación</option>
+                                <option>Salud</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Dejenos un mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="enviar()">Enviar</button>
+                        <input type="button" value="Ocultar" class="btn btn-primary" onclick="ocultar()"><br><br>
+                        <div id="mostrarOcultar">
+                            <center>
+                        <table id="myTable" class="bg-light"  width="100%" class="rounded" >
+                              <thead>
+                        
+                                  <tr>
+                                      <td colspan="3"><p id="suma" id="fname" class="text-dark"></p></td>
+                                      <td><input type="button" class="btn btn-dark float-right" value="Borrar" onclick="delRow(this)"></td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan="3"><p id="suma" id="fname" class="text-dark"></p></td>
+                        
+                                      <td><input type="button" class="btn btn-dark float-right" value="Borrar" onclick="delRow(this)"></td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan="3"><p id="suma" id="fname" class="text-dark" ></p></td>
+                        
+                                      <td><input type="button" class="btn btn-dark float-right" value="Borrar" onclick="delRow(this)"></td>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                        
+                              </tbody>
+                          </table>
+                        </center>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <footer class="blockquote-footer text-white bg-primary text-center mt-5">
+        © Nicolas Ortiz-Natalia Monsalve, 2020. Todos los derechos reservados
+    </footer>
+    <script src="../Js/servicios.js"></script>
+    <script src="../Js/carousel.js"></script>
+    <script src="../Js/sesion.js"></script>
+</body>
+
+</html>

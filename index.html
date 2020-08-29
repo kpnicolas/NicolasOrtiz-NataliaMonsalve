@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veterinaria</title>
+    <link rel="icon" type="image/png" href="Img/veterinario.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <button
+          onclick="show()"
+          type="button"
+          class="btn btn-primary float-left"
+          data-toggle="modal"
+          data-target="#exampleModalCentered"
+        >
+          Iniciar sesion
+        </button>
+      </nav>
+      <div class="d-none d-sm-none d-md-block">
+        <div style="max-width: 500px;">
+        <a href="index.html"><img class="mySlides" src="Img/recepcion.jpg" height="400" width="300%"></a>
+        <a href="Html/somos.html"><img class="mySlides" src="Img/EncabezadoSomos_Mesa de trabajo 1.png"></a>
+        <a href="Html/servicios.html"><img class="mySlides" src="Img/EncabezadoServicios_Mesa de trabajo 1.png"></a>
+        <a href="Html/articulos.html"><img class="mySlides" src="Img/Fondo_Articulos_Mesa de trabajo 1.png"></a>
+        <a href="Html/contactenos.html"><img class="mySlides" src="Img/EncabezadoContac_Mesa de trabajo 1.png"></a>
+        <a href="Html/catagolo.html"><img class="mySlides" src="Img/catalogo.png"></a>
+        </div>
+      </div>
+    </header>
+    <div
+      class="modal"
+      id="exampleModalCentered"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenteredLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenteredLabel">
+              Iniciar sesion
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">X</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="log">
+              <form id="form" class="form-signin">
+                <label class="m-3 h5 font-weight-normal">Usuario</label>
+                <input class="form-control" id="user" type="text" />
+                <label class="m-3 h5 font-weight-normal">Contraseña</label>
+                <input class="form-control" id="password" type="password" />
+                <input
+                  class="btn btn-lg btn-primary btn-block mt-3"
+                  type="submit"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary nav-justified">
+      <button
+        class="navbar-toggler navbar-toggler-right"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarTogglerDemo02"
+      >
+        <ul class="navbar-nav mt-2 mt-md-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Inicio<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/somos.html">Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/articulos.html">Articulos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/contactenos.html">Contactenos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/catagolo.html">Catalogo</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="d-none d-sm-none d-md-block">
+      <marquee class="mt-3" behavior="alternate">
+        <p>
+          Querido usuario, recuerde que por cuestion de la cuarentena los
+          pedidos son a domicilio
+        </p>
+      </marquee>
+    </div>
+    <div class="container mt-3">
+      <div class="row no-gutters">
+        <div class="col-12 col-lg-12 mb-4">
+          <h2>Veterinaria SitWithMe, estamos a tu servicio</h2>
+          <section>
+            <article>
+              <p>
+                En todo momento estamos a su disposición para ofrecerle un
+                servicio veterinario integral, que de respuesta a todas<br />
+                las necesidades que puedan presentarse en la crianza de sus
+                amiguitos.
+              </p>
+              <h2>Amamos los Animales</h2>
+              <p>
+                Ofrecemos la mejor atención y una completa gama de servicios
+                veterinarios.<br />
+                que responden a las necesidades de sus mascotas; como también,
+                servicios especializados de Consultas, Urgencias, Cirugías,<br />
+                Hospitalización, Laboratorio, Ecografías, Rayos X, Vacunas,
+                Concentrados, Drogas, Domicilios, Transporte, Peluquería
+                especializada y Boutique.
+              </p>
+              <h2>¿Por qué es tan importante acudir al veterinario?</h2>
+              <h2>La importancia para tu mascota:</h2>
+              <p>
+                El veterinario no solo es útil en el tratamiento de
+                enfermedades, también cumple una función muy importante en su
+                prevención.<br />
+                Y es que el veterinario es la persona que mejor conoce a tu
+                mascota, por lo que te aconsejará mejor que nadie.
+              </p>
+              <p>
+                <b>Con qué regularidad debes acudir</b> Ahora bien: ¿cada cuánto
+                tiempo debo llevar al veterinario a mi mascota? A no ser que
+                surja cualquier imprevisto o el animal se encuentre enfermo,ten
+                estos datos como referencia: <br /><br />
+                <b>Durante el primer medio año: con frecuencia</b> <br />
+                Hasta que el animal tiene entre 5 y 6 meses es necesario acudir
+                con regularidad al veterinario. Las revisiones y vacunaciones
+                correspondientes a este periodo son de vital importancia.<br /><br />
+                <b
+                  >Del primer medio año a los 6-7 años (senectud): una vez al
+                  año</b
+                ><br />
+                Aunque en el caso de perros y gatos suele ser hasta los 6-7
+                años, en otros animales la edad de referencia puede ser otra.
+                Ante cualquier duda, consulta siempre a tu veterinario.
+                <br /><br />
+                <b>A partir de los 6-7 años: cada 6 meses</b><br />
+                A partir de esta edad es más probable que tu mascota pueda
+                contraer enfermedades propias de la edad, como artrosis o
+                problemas cardíacos, por ejemplo. Por eso es recomendable que
+                acudas con cierta regularidad a tu veterinario para que le haga
+                los chequeos pertinentes.
+              </p>
+            </article>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="d-none d-md-block col-md-6 col-lg-6">
+          <h2>¡Aqui tienes un video de nuestro gran trabajo!</h2>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/iVAA8E5ml2M"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="d-none d-md-block col-md-6 col-lg-6">
+          <h2>¡Por aquí puedes encontrarnos!</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.230310303918!2d-74.79474408552207!3d10.945967659035205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef5d2b01926e4e5%3A0x540f31583c067420!2sVeterinaria%20Animal%20Planet!5e0!3m2!1ses!2sco!4v1592168489826!5m2!1ses!2sco"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border: 0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <footer class="blockquote-footer text-white bg-primary text-center mt-5">
+      © Nicolas Ortiz-Natalia Monsalve, 2020. Todos los derechos reservados
+    </footer>
+    <script src="Js/carousel.js"></script>
+    <script src="Js/sesion.js"></script>
+  </body>
+</html>

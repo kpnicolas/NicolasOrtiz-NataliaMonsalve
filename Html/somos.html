@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Somos</title>
+    <link rel="icon" type="image/png" href="../Img/veterinario.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <button
+          onclick="show()"
+          type="button"
+          class="btn btn-primary float-left"
+          data-toggle="modal"
+          data-target="#exampleModalCentered"
+        >
+          Iniciar sesion
+        </button>
+      </nav>
+      
+        <div class="d-none d-sm-none d-md-block">
+          <div style="max-width: 500px;">
+          <a href="somos.html"><img class="mySlides" src="../Img/EncabezadoSomos_Mesa de trabajo 1.png"></a>
+          <a href="servicios.html"><img class="mySlides" src="../Img/EncabezadoServicios_Mesa de trabajo 1.png"></a>
+          <a href="articulos.html"><img class="mySlides" src="../Img/Fondo_Articulos_Mesa de trabajo 1.png"></a>
+          <a href="contactenos.html"><img class="mySlides" src="../Img/EncabezadoContac_Mesa de trabajo 1.png"></a>
+          <a href="catagolo.html"><img class="mySlides" src="../Img/catalogo.png"></a>
+          <a href="../index.html"><img class="mySlides" src="../Img/recepcion.jpg" height="400" width="300%"></a>
+          </div>
+        </div>
+      
+    </header>
+    <div
+      class="modal"
+      id="exampleModalCentered"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenteredLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenteredLabel">
+              Iniciar sesion
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">X</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="log">
+              <form id="form" class="form-signin">
+                <label class="m-3 h5 font-weight-normal">Usuario</label>
+                <input class="form-control" id="user" type="text" />
+                <label class="m-3 h5 font-weight-normal">Contraseña</label>
+                <input class="form-control" id="password" type="password" />
+                <input
+                  class="btn btn-lg btn-primary btn-block mt-3"
+                  type="submit"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary nav-justified">
+      <button
+        class="navbar-toggler navbar-toggler-right"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarTogglerDemo02"
+      >
+        <ul class="navbar-nav mt-2 mt-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="somos.html"
+              >Somos<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="articulos.html">Articulos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactenos.html">Contactenos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catagolo.html">Catalogo</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-xs-12 col-ms-12 col-md-12 col-lg-6">
+          <section>
+            <p>
+              Ofrecemos un amplio espectro de procedimientos de diagnóstico a
+              través de pruebas internas y el uso de laboratorios externos.
+              También trabajamos estrechamente con las prácticas locales cuando
+              se requieren procedimientos de diagnóstico especiales. La
+              instalación incluye una farmacia bien surtida, una sala de cirugía
+              en el hospital, capacidades de rayos X internas, un área de
+              hospitalización estrechamente supervisada y perreras interiores
+              con áreas para caminar al aire libre<br /><br />
+              En SitWithMe Veterinaria nos esforzamos por ofrecer no solo buenos
+              consejos, sino también una atención veterinaria óptima, lo que le
+              permite disfrutar de su acompañante durante un número máximo de
+              años. Nuestro trabajo no es solo tratar a su mascota cuando no se
+              siente bien, sino también ayudarlo a aprender cómo mantener feliz
+              y saludable a su mejor amigo. Al considerar a un veterinario, es
+              importante evaluar todos los elementos de atención que la clínica
+              puede proporcionar. La compasión, el costo asequible y la calidad
+              son rasgos importantes, pero nuestro objetivo es proporcionar un
+              nivel de atención que supere todas las expectativas.<br /><br />
+              Estamos orgullosos de nuestro personal y sus habilidades. La
+              duración de su mandato es un testimonio de su dedicación.<br /><br />
+              Sientete libre de visitarnos y presentarse si se encuentra en el
+              vecindario. ¡Casi siempre tenemos café disponible!
+            </p>
+          </section>
+        </div>
+        <div class="d-none d-md-block col-lg-6">
+          <center>
+<table>
+        <td style="background-color: bisque;">
+          <center>
+            <h3>¿Quieres adoptar?</h3>
+            <p>Sigue estos pasos:</p>
+          </center>
+          <ol>
+            <li>
+              <p>Solicitud y aprobación</p>
+            </li>
+            <li>
+              <p>Conoce y saluda</p>
+            </li>
+            <li>
+              <p>Visita al hogar</p>
+            </li>
+            <li>
+              <p>Contratos y pagos</p>
+            </li>
+            <li>
+              <p>Recoger!</p>
+            </li>
+          </ol>
+        </td>
+      </tr>
+</table>
+</center>
+</div>
+</div>
+</div>
+<div class="container mt-5">
+  <div class="row">
+      <div class="d-none d-md-block col-md-12 col-lg-6">
+
+          <table width="100%" border="0">
+              <tr>
+                  <th colspan="2" class="table-primary">
+                      <center>Mascotas mas famosas en el local</center>
+                  </th>
+              </tr>
+              <tr>
+                  <td>
+                      <p>Sazy</p>
+                  </td>
+                  <td>
+                      <p>Tomy</p>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <p>Eve</p>
+                  </td>
+                  <td>
+                      <p>Jackson</p>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <p>John</p>
+                  </td>
+                  <td>
+                      <p>Doe</p>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <p>Nino</p>
+                  </td>
+                  <td>
+                      <p>Rodolf</p>
+                  </td>
+              </tr>
+          </table>
+        </div>
+        <div class="d-none d-md-block col-md-12 col-lg-6">
+        <img src="../Img/imagen1_Somos.png" width="400" height="200">
+        </div>
+  </div>
+</div><br><br>
+<center>
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 bg-light jumbotron rounded">
+  <form id="formulario">
+    <div class="form-group">
+      <h3>Inscribe a tu perro en un de nuestros concursos</h3>
+      <label for="Nombre">Nombre</label>
+      <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+    </div>
+      <div class="form-group">
+        <label for="rasa">Rasa</label>
+        <input type="text" class="form-control" id="rasa" placeholder="Rasa">
+      </div>
+      <div class="form-group">
+        <label for="edad">Edad</label>
+        <input type="number" class="form-control" id="edad" placeholder="Edad">
+      </div>
+    <button type="button" class="btn btn-primary" onclick="enviar()">Enviar</button>
+<input type="button" value="Ocultar" class="btn btn-primary" onclick="ocultar()"><br><br>
+  </form>
+
+  <div id="mostrarOcultar">
+      <center>
+  <table id="myTable" id="mostrar"  class="bg-light"  width="100%" class="rounded">
+        <thead>
+
+            <tr>
+                <td colspan="3"><p id="suma" id="fname" class="text-dark"></p></td>
+                <td><input type="button" class="btn btn-dark float-right" value="Borrar" onclick="delRow(this)"></td>
+            </tr>
+            <tr>
+                <td colspan="3"><p id="suma" id="fname" class="text-dark"></p></td>
+
+                <td><input type="button" class="btn btn-dark float-right" value="Borrar" onclick="delRow(this)"></td>
+            </tr>
+            <tr>
+                <td colspan="3"><p id="suma" id="fname" class="text-dark" ></p></td>
+
+                <td><input type="button" class="btn btn-dark float-right" value="Borrar" onclick="delRow(this)"></td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</center>
+</div>
+</center>
+
+      
+    <footer class="blockquote-footer text-white bg-primary text-center mt-5">
+      © Nicolas Ortiz-Natalia Monsalve, 2020. Todos los derechos reservados
+    </footer>
+    <script src="../Js/somos.js"></script>
+    <script src="../Js/carousel.js"></script>
+    <script src="../Js/sesion.js"></script>
+  </body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Catalogo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+	
+    <link rel="icon" type="image/png" href="../Img/veterinario.png" />
+
+</head>
+    
+<body>
+
+    <header>
+        <style>
+          
+        </style>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+          <button
+            onclick="show()"
+            type="button"
+            class="btn btn-primary float-left"
+            data-toggle="modal"
+            data-target="#exampleModalCentered"
+          >
+            Iniciar sesion
+          </button>
+        </nav>
+        <div class="d-none d-sm-none d-md-block">
+   
+          <div style="max-width: 500px;">
+          <a href="catagolo.html"><img class="mySlides" src="../Img/catalogo.png"></a>
+          <a href="../index.html"><img class="mySlides" src="../Img/recepcion.jpg" height="400" width="300%"></a>
+          <a href="somos.html"><img class="mySlides" src="../Img/EncabezadoSomos_Mesa de trabajo 1.png"></a>
+          <a href="servicios.html"><img class="mySlides" src="../Img/EncabezadoServicios_Mesa de trabajo 1.png"></a>
+          <a href="articulos.html"><img class="mySlides" src="../Img/Fondo_Articulos_Mesa de trabajo 1.png"></a>
+          <a href="contactenos.html"><img class="mySlides" src="../Img/EncabezadoContac_Mesa de trabajo 1.png"></a>
+          </div>
+        </div>
+      </header>
+      <div
+      class="modal"
+      id="exampleModalCentered"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenteredLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenteredLabel">
+              Iniciar sesion
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">X</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="log">
+              <form id="form" class="form-signin">
+                <label class="m-3 h5 font-weight-normal">Usuario</label>
+                <input class="form-control" id="user" type="text" />
+                <label class="m-3 h5 font-weight-normal">Contraseña</label>
+                <input class="form-control" id="password" type="password" />
+                <input
+                  class="btn btn-lg btn-primary btn-block mt-3"
+                  type="submit"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary nav-justified">
+      <button
+        class="navbar-toggler navbar-toggler-right"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarTogglerDemo02"
+      >
+        <ul class="navbar-nav mt-2 mt-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="somos.html">Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="articulos.html"
+              >Articulos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactenos.html">Contactenos</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="catagolo.html">Catalogo<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 py-5 text-center"><h3>Medicamentos</h3></div>
+            
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/zinpar.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Zinpar tabletas bister</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $15,900
+  </div>
+  </div>
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/totalf.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Total F 10K</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $9,900
+  </div>
+  </div> 
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/canisan.jpg" class="card-img-top" alt="...">
+                <div class="card-body"> <h5 class="card-title">Canisan</h5></div>
+  <div class="card-footer text-muted">
+    $19,500
+  </div>
+  </div> 
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/rondel.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Rondel jeringa</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $12,500
+  </div>
+  </div>
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/otivet.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Otivet</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $19,000
+  </div>
+  </div>
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/guna.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Guna interferon</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $64,000
+  </div>
+  </div>
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/guna.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Rondel puppy</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $8,500
+  </div>
+  </div>
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/paracanis.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Paracanis</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $8,500
+  </div>
+  </div>
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/enrovet.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Enrovet</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $21,000
+  </div>
+  </div>
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/epiotic.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Epiotic frasco</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $35,500
+  </div>
+            </div>
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/pimocard.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Pimocard tabletas</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $6,000
+  </div></div>
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/Singulpar.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Singulpar</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $11,000
+  </div></div>
+            
+           <div class="col-12 py-5 text-center"><h3>Medicamentos</h3></div>  
+            
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/proplan.png" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Proplan delicate</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $45,500
+  </div>                
+        </div>
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/nutranugets.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Nutra Nuggets</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $75,500
+  </div>                
+        </div>
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/catchow.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Cat Chow Gatitos</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $15,500
+  </div>                
+        </div>
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/agilitygold.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Agiliti Gold Gatitos</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $11,500
+  </div>                
+        </div>
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/nutranuggets.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Nutra Nuggets Cordero</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $26,500
+  </div>                
+        </div>
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/excelentadulto.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Excelente Adulto</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $36,500
+  </div>                
+        </div>
+            
+             <div class="col-12 py-5 text-center"><h3>Productos</h3></div>  
+            
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/hueso.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Hueso Dentado</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $6,500
+  </div>                
+        </div>
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/pelota.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Pelota de Goma</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $13,500
+  </div>                
+        </div>
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/cepillo.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Cepillo Mediano</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $6,500
+  </div>                
+        </div>
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/comedero.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Comedero Doble</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $41,700
+  </div>                
+        </div>  
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/juguete.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Juguete Eco Bomba</h5>
+      </div>
+  <div class="card-footer text-muted">
+    $12,500
+  </div>                
+        </div>
+         <div class="card text-center col-sm-6 col-md-4 col-lg-2" style="width: 18rem;">
+  <img src="../Img/peluche.jpg" class="card-img-top" alt="...">
+  <div class="card-body"> <h5 class="card-title">Pack Peluches x3 </h5>
+      </div>
+  <div class="card-footer text-muted">
+    $36,500
+  </div>                
+        </div>
+    </div>
+    </div><br><br><br>
+    <div class="container">
+      <div class="row">
+          <div class="d-none d-md-block col-lg-12 bg-info rounded">
+    <form action="">
+      <br>
+      <input type="number" class="form-control" id="n1" placeholder="" required><br>
+      <input type="number" class="form-control" id="n2" placeholder="" required><br>
+      <input type="button" value="Sumar" class="btn btn-dark" onclick="sumar()">
+      <input type="button" value="Restar" class="btn btn-dark" onclick="restar()">
+      <input type="button" value="Dividir" class="btn btn-dark" onclick="dividir()">
+      <input type="button" value="Mostrar" class="btn btn-dark" onclick="mostrar()">
+      <input type="button" value="Ocultar" class="btn btn-dark" onclick="ocultar()"><br><br>
+      <div id="mostrarOcultar">
+        <center>
+          <table id="myTable" class="bg-light"  width="100%" class="rounded" >
+                <thead>
+          
+                    <tr>
+                        <td colspan="3"><p id="suma" id="fname" class="text-dark"></p></td>
+                        <td><input type="button" class="btn btn-dark float-right" value="Borrar" onclick="delRow(this)"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><p id="resta" id="fname" class="text-dark"></p></td>
+          
+                        <td><input type="button" class="btn btn-dark float-right" value="Borrar" onclick="delRow(this)"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><p id="dividir" id="fname" class="text-dark" ></p></td>
+          
+                        <td><input type="button" class="btn btn-dark float-right" value="Borrar" onclick="delRow(this)"></td>
+                    </tr>
+                </thead>
+                <tbody>
+          
+                </tbody>
+            </table>
+          </center>
+          </div><br><br>
+  </form>
+        </div>
+        </div>
+    </div>
+   
+    <footer class="blockquote-footer text-white bg-primary text-center mt-5">
+        © Nicolas Ortiz-Natalia Monsalve, 2020. Todos los derechos reservados
+      </footer>
+      <script src="../Js/catalogo.js"></script>
+      <script src="../Js/carousel.js"></script>
+      <script src="../Js/sesion.js"></script>   
+</body>
+
+</html>
